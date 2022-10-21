@@ -1,0 +1,54 @@
+---
+execute: 
+  warning: false
+knitr:
+  opts_knit:
+    global.par: true
+  opts_chunk: 
+    comment: ''
+---
+# Welcome {.unnumbered}
+
+```{r}
+#| echo: false
+#| output: asis
+old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
+```
+
+Welcome to the __rtemislive__ online documentation.
+
+<img class="rtimg" src="https://www.lambdamd.org/assets/rtemislive_0.93.4/rtemislive.jpeg" alt="rtemislive" style="width:100%;"/>
+<br>
+
+__rtemislive__ is the graphical interface for 
+[__rtemis__](https://rtemis.lambdamd.org). It is a comprehensive data science 
+web application that provides:
+
+- Advanced visualization
+- Statistical Analyses
+- Machine Learning, including Clustering, Decomposition, Regression, and 
+Classification
+
+<br>
+<img 
+    src="https://egenn.github.io/imgs/rtemis_bow_gray50.png" 
+    alt="rtemis bow" 
+    style="display: block; margin: auto; width: 9%;"/>
+<br>
+<figure>
+    <img class="rtimg" src="https://www.lambdamd.org/assets/rtemislive_0.93.4/6_rtemislive_0.93.4_Decom.jpeg" alt="rtemislive Decomposition" style="width:100%;"/>
+    <!-- <figcaption>Examples of rtemis visualizations</figcaption> -->
+</figure>
+<br>
+<figure>
+    <img class="rtimg" src="https://www.lambdamd.org/assets/rtemislive_0.93.4/7_rtemislive_0.93.4_Cluster.jpeg" alt="rtemislive Clustering" style="width:100%;"/>
+    <!-- <figcaption>rtemislive</figcaption> -->
+</figure>
+<br>
+
+This website was created using [Quarto](https://quarto.org/).
+
+```{r}
+#| echo: false
+rtemis:::rtascii()
+```

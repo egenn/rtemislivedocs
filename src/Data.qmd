@@ -1,0 +1,16 @@
+# Data
+
+The Data module allows you to:
+
+- Upload data onto the platform
+- View your data as a spreadsheet
+    - sort by any column
+    - search
+- Filter
+- Downloade filtered data
+
+## Uploading data
+
+**rtemislive** supports a wide range of file types, including the most popular formats for tabular data.
+
+## Download filtered data

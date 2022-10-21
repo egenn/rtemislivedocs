@@ -1,0 +1,35 @@
+project:
+  type: book
+  output-dir: ../docs
+
+book:
+  title: "rtemislive"
+  author: "E.D. Gennatas"
+  date: "10/21/2022"
+  favicon: favicon.ico
+  # google-analytics: "UA-127457544-1"
+  sidebar:
+    style: "floating"
+    logo: "rtemis_logo_2021_gray50.png"
+    title: " "
+    tools:
+      - icon: github
+        href: https://github.com/egenn/rtemis
+  chapters:
+   - index.qmd
+   - Introduction.qmd
+   - Data.qmd
+   - Preproc.qmd
+   - Plot.qmd
+   - Heat.qmd
+   - Graph.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      dark: rtemis-dark.scss
+      light: rtemis-light.scss
+    css: bootstrap.lambdamd.css
+    highlight-style: atom-one

@@ -1,0 +1,19 @@
+# Introduction
+
+**rtemislive** is organized in modules.
+The user can toggle modules ON and OFF using the first drop-down menu on the
+top right.
+
+Custom installations allow to specify whether a dataset should be pre-loaded
+and allow setting the initial state of most application settings, including
+modules and themes.
+
+<br><br>
+The documentation on this site ir organized by module: each chapter,
+accessible from the navigation in the lest, corresponds to an individual module.
+
+<br><br>
+**rtemislive** is built on top of [**rtemis**](https://rtemis.lambdamd.org)
+
+Data operations, including filtering, selecting and a subset of data aggregation operations, performed in real time using `data.table`.
+

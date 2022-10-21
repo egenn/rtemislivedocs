@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "rtemislive",
+    "section": "",
+    "text": "Welcome\n\nWelcome to the rtemislive online documentation.\n \nrtemislive is the graphical interface for rtemis. It is a comprehensive data science web application that provides:\n\nAdvanced visualization\nStatistical Analyses\nMachine Learning, including Clustering, Decomposition, Regression, and Classification\n\n  \n\n \n\n\n\n \n\n\nThis website was created using Quarto.\n\n▄▄▄  ▄▄▄▄▄▄▄▄ .• ▌ ▄ ·. ▪  .▄▄ ·\n▀▄ █·•██  ▀▄.▀··██ ▐███▪██ ▐█ ▀.\n▐▀▀▄  ▐█.▪▐▀▀▪▄▐█ ▌▐▌▐█·▐█·▄▀▀▀█▄\n▐█•█▌ ▐█▌·▐█▄▄▌██ ██▌▐█▌▐█▌▐█▄▪▐█\n.▀  ▀ ▀▀▀  ▀▀▀ ▀▀  █▪▀▀▀▀▀▀ ▀▀▀▀"
+  },
+  {
+    "objectID": "Introduction.html",
+    "href": "Introduction.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "rtemislive is organized in modules. The user can toggle modules ON and OFF using the first drop-down menu on the top right.\nCustom installations allow to specify whether a dataset should be pre-loaded and allow setting the initial state of most application settings, including modules and themes.\n The documentation on this site ir organized by module: each chapter, accessible from the navigation in the lest, corresponds to an individual module.\n rtemislive is built on top of rtemis\nData operations, including filtering, selecting and a subset of data aggregation operations, performed in real time using data.table."
+  },
+  {
+    "objectID": "Data.html#uploading-data",
+    "href": "Data.html#uploading-data",
+    "title": "2  Data",
+    "section": "2.1 Uploading data",
+    "text": "2.1 Uploading data\nrtemislive supports a wide range of file types, including the most popular formats for tabular data."
+  },
+  {
+    "objectID": "Data.html#download-filtered-data",
+    "href": "Data.html#download-filtered-data",
+    "title": "2  Data",
+    "section": "2.2 Download filtered data",
+    "text": "2.2 Download filtered data"
+  },
+  {
+    "objectID": "Preproc.html",
+    "href": "Preproc.html",
+    "title": "3  Preprocessing",
+    "section": "",
+    "text": "The preprocessing module offers extensive functionality for data preprocessing"
+  },
+  {
+    "objectID": "Heat.html",
+    "href": "Heat.html",
+    "title": "5  Heatmap",
+    "section": "",
+    "text": "The heatmap module allows plotting heatmaps of the correlation matrix of any number of continuous variables."
+  },
+  {
+    "objectID": "Graph.html",
+    "href": "Graph.html",
+    "title": "6  Graph",
+    "section": "",
+    "text": "Graph theory module:\n\nVisualization\n\nigraph\nNetworkD3\ngraphjs"
+  }
+]
