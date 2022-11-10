@@ -1,0 +1,11 @@
+# Plot {sec-plot}
+
+This is the main plotting module. It provides support for the following plot types:
+
+- Boxplot
+- Histogram
+- Density plot
+- Bar plot
+- Scatter (2D and 3D)
+- Map (choropleth map)
+- Volcano plot

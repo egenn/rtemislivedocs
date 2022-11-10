@@ -47,5 +47,12 @@
     "title": "6  Graph",
     "section": "",
     "text": "Graph theory module:\n\nVisualization\n\nigraph\nNetworkD3\ngraphjs"
+  },
+  {
+    "objectID": "Plot.html",
+    "href": "Plot.html",
+    "title": "4  Plot",
+    "section": "",
+    "text": "This is the main plotting module. It provides support for the following plot types:\n\nBoxplot\nHistogram\nDensity plot\nBar plot\nScatter (2D and 3D)\nMap (choropleth map)\nVolcano plot"
   }
 ]

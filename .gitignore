@@ -1,6 +1,9 @@
 # MacOS
 .DS_Store
 
+# VS Code
+*.code-workspace
+
 # History files
 .Rhistory
 .Rapp.history
