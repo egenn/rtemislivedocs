@@ -9,7 +9,7 @@
 knitr::include_graphics("9_rtemislive_0.93.75_ProteinSequence.jpeg")
 ```
 
-The Protein module allows visualizing the primary structure, i.e. amino acid sequence,
+The **Protein** module allows visualizing the primary structure, i.e. amino acid sequence,
 of proteins.
 
 It allows multiple types of annotations:

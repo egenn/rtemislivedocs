@@ -1,5 +1,31 @@
 # Introduction {sec-intro}
 
+## rtemis
+
+<div>
+<img
+  class = "imlogo"
+  src = "rtemis_live.png"/>
+</div>
+
+__rtemis__ provides a comprehensive console and web-based machine learning and 
+visuzalization platform.
+
+- [__rtemis__](https://github.com/egenn/rtemis): R package that provides:
+  - Static and interactive visualization
+  - Supervised learning: classification & regression
+  - Unsupervised learning: 
+    - Clustering
+    - Decomposition
+  - Cross-decomposition
+- [__rtemislive__](https://rtemislive.lambdamd.org/): web application providing no-code access to __rtemis__ functionality
+
+For more information on the __rtemis__ package see the 
+[online documentation](https://rtemis.lambdamd.org) and 
+[GitHub repository](https://github.com/egenn/rtemis).
+
+## rtemislive
+
 ```{r}
 #| label: fig-menu
 #| echo: false
@@ -12,17 +38,16 @@ knitr::include_graphics("2_rtemislive_0.93.75_Plot&ModuleMenu.jpeg")
 **rtemislive** is organized in modules.
 The user can toggle modules ON and OFF using the first drop-down menu on the
 top right.
-
-Custom installations allow to specify whether a dataset should be pre-loaded
-and allow setting the initial state of most application settings, including
-modules and themes.
-
+<br><br>
+Custom installations allow you to pre-load a dataset and defining the initial state of 
+most application settings, including modules and themes.
 <br><br>
 The documentation on this site ir organized by module: each chapter,
 accessible from the navigation in the lest, corresponds to an individual module.
-
 <br><br>
-**rtemislive** is built on top of [**rtemis**](https://rtemis.lambdamd.org)
-
-Data operations, including filtering, selecting and a subset of data aggregation operations, performed in real time using `data.table`.
-
+Data operations, including filtering, selecting and a subset of data aggregation 
+operations, performed in real time using 
+[`data.table`](https://github.com/Rdatatable/data.table).
+<br><br>
+**rtemis** and **rtemislive** are written by 
+[Stathis Gennatas, MBBS PhD](https://egenn.lambdamd.org/)

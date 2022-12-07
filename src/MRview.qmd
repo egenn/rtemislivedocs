@@ -8,3 +8,5 @@
 #| fig-cap: MRI Viewer
 knitr::include_graphics("8_rtemislive_0.93.75_MRIViewer.jpeg")
 ```
+
+The **MRview** module allows you to load a main MRI volume and one or more overlays.
