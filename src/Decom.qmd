@@ -14,13 +14,13 @@ matrix factorization.
 
 The following algorithms are supported:
 
-- PCA Principal Component Analysis
-- ICA Independent Component Analysis
-- NMF Non-negative Matrix Factorization
-- SPCA Sparse PCA
-- Kernel PCA Kernel Principal Component Analysis
-- ISOMAP ISOMAP
-- MDS Multidimensional scaling
-- LLE Locally Linear Embedding
-- tSNE t-distributed Stochastic Neighbor Embedding
-- UMAP Uniform Manifold Approximation and Projection
+- **PCA** [Principal Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
+- **ICA** [Independent Component Analysis](https://en.wikipedia.org/wiki/Independent_component_analysis)
+- **NMF** [Non-negative Matrix Factorization](https://en.wikipedia.org/wiki/Non-negative_matrix_factorization)
+- **SPCA** [Sparse PCA](https://en.wikipedia.org/wiki/Sparse_PCA)
+- **Kernel PCA** [Kernel Principal Component Analysis](https://en.wikipedia.org/wiki/Kernel_principal_component_analysis)
+- **ISOMAP** 
+- **MDS** [Multidimensional scaling](https://en.wikipedia.org/wiki/Multidimensional_scaling)
+- **LLE** [Locally Linear Embedding](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction#Locally-linear_embedding)
+- **tSNE** [t-distributed Stochastic Neighbor Embedding](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding)
+- **UMAP** [Uniform Manifold Approximation and Projection](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction#Uniform_manifold_approximation_and_projection)
