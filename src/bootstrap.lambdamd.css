@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700'); */
 @import url('https://rsms.me/inter/inter.css');
 
 html,
@@ -30,9 +30,10 @@ body {
 }
 
 /* Source code */
-pre, code, kbd, samp {
+/* Fira Code messes up line-height: 1 in Firefox (!?) */
+/* pre, code, kbd, samp {
     font-family: "Fira Code", "Fira Mono";
-}
+} */
 
 /* Input source code teal left border */
 pre.sourceCode {
@@ -145,5 +146,5 @@ li code:not(.sourceCode) {
 
 /* for rtascii */
 .fansi-output {
-    line-height: 1.24;
+    line-height: 1em;
 }
