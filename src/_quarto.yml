@@ -5,12 +5,12 @@ project:
 book:
   title: "rtemislive"
   author: "E.D. Gennatas"
-  date: "10/21/2022"
+  date: "12/06/2022"
   favicon: favicon.ico
   # google-analytics: "UA-127457544-1"
   sidebar:
     style: "floating"
-    logo: "rtemis_logo_2021_gray50.png"
+    logo: "rtemislive_logo.png"
     title: " "
     tools:
       - icon: github

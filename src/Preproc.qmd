@@ -1,3 +1,37 @@
-# Preprocessing
+# Preprocessing {sec-preprocessing}
 
-The preprocessing module offers extensive functionality for data preprocessing
+The preprocessing module offers extensive functionality for data preprocessing.
+All preprocessing is performed using the rtemis
+[`preprocess()`](https://rtemis.lambdamd.org/DataPreprocessing.html) command.
+<br><br>
+Hover over any preprocess option on the right menu to display a tooltip with the 
+corresponding description.
+
+The following operations are available:
+
+- Data Cleaning
+    - Remove constants
+    - Remove duplicates
+- Batch Type Conversions, i.e. convert all columns of a type to another type
+    - Character to factor
+    - Logical to factor
+    - Integer to numeric
+- Convert all variables with up to a particular number of unique values to factor
+- Individual variable conversion
+    - Select a variable by name and convert to any type
+- Handle missing data:
+    - Factor NA to missing: Considering all factor variables, convert missing values to
+    a new level named "missing". This is one way to impute categorical data
+    - Impute missing data: Uses iterative random forest with predictive mean matching to
+    predict missing data from available data
+        - Add missingness: Add an indicator column for each variable that is being imputed indicating cases whose data was imputed
+    - Complete cases: keep complete cases only
+- Data Transformations
+    - Scale numeric data: Transformed all numeric columns to have a standard deviation of 1
+    - Center numeric data: Transformed all numeric columns to have a mean of 0
+    - One-hot encode categorical: [One-hot](https://en.wikipedia.org/wiki/One-hot) all
+    categorical variables
+- Reorder factor levels: Allows you to pick any factor in the dataset and explicitly
+set the order of levels. This affects the order categorical levels appear in plots, and
+which level is considered as the baseline in linear models.
+- Delete columns: Allows removing columns from your data

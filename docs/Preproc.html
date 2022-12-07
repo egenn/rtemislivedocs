@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./rtemis_logo_2021_gray50.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./rtemislive_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./"></a> 
@@ -166,7 +166,43 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>The preprocessing module offers extensive functionality for data preprocessing</p>
+<p>The preprocessing module offers extensive functionality for data preprocessing. All preprocessing is performed using the rtemis <a href="https://rtemis.lambdamd.org/DataPreprocessing.html"><code>preprocess()</code></a> command. <br><br> Hover over any preprocess option on the right menu to display a tooltip with the corresponding description.</p>
+<p>The following operations are available:</p>
+<ul>
+<li>Data Cleaning
+<ul>
+<li>Remove constants</li>
+<li>Remove duplicates</li>
+</ul></li>
+<li>Batch Type Conversions, i.e.&nbsp;convert all columns of a type to another type
+<ul>
+<li>Character to factor</li>
+<li>Logical to factor</li>
+<li>Integer to numeric</li>
+</ul></li>
+<li>Convert all variables with up to a particular number of unique values to factor</li>
+<li>Individual variable conversion
+<ul>
+<li>Select a variable by name and convert to any type</li>
+</ul></li>
+<li>Handle missing data:
+<ul>
+<li>Factor NA to missing: Considering all factor variables, convert missing values to a new level named “missing”. This is one way to impute categorical data</li>
+<li>Impute missing data: Uses iterative random forest with predictive mean matching to predict missing data from available data
+<ul>
+<li>Add missingness: Add an indicator column for each variable that is being imputed indicating cases whose data was imputed</li>
+</ul></li>
+<li>Complete cases: keep complete cases only</li>
+</ul></li>
+<li>Data Transformations
+<ul>
+<li>Scale numeric data: Transformed all numeric columns to have a standard deviation of 1</li>
+<li>Center numeric data: Transformed all numeric columns to have a mean of 0</li>
+<li>One-hot encode categorical: <a href="https://en.wikipedia.org/wiki/One-hot">One-hot</a> all categorical variables</li>
+</ul></li>
+<li>Reorder factor levels: Allows you to pick any factor in the dataset and explicitly set the order of levels. This affects the order categorical levels appear in plots, and which level is considered as the baseline in linear models.</li>
+<li>Delete columns: Allows removing columns from your data</li>
+</ul>
 
 
 

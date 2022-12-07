@@ -18,7 +18,7 @@
     "href": "Data.html#uploading-data",
     "title": "2  Data",
     "section": "2.1 Uploading data",
-    "text": "2.1 Uploading data\nrtemislive supports a wide range of file types, including the most popular formats for tabular data."
+    "text": "2.1 Uploading data\n\n\n\n\n\nFigure 2.1: rtemislive supports most popular tabular data file formats\n\n\n\n\nrtemislive supports a wide range of file types, including some of the most popular tabular data formats:\n\nGeneral purpose: .csv, .json\nR: .rds\nExcel: .xlsx\nApache Arrow: .arrow, .feather, .parquet\nStata: .dta\nSPSS: .por, .sav, .zsav\nSAS: .xpt\nMatlab: .mat\n\nIt is best to upload cleaned data.  Clean data includes:\n\nDescriptive column names that always begin with letters (not numbers!) and contain no symbols other than underscores\nDescriptive categorical levels: e.g. “Female”, “Male”, not “1”, “2”; “Control”, “Case”, not “0”, “1”)\n\nIf you have prepared a dataset in R, the most convenient way to upload to rtemislive is to use saveRD() to save to an RDS and then upload that file. This will maintain all column classes."
   },
   {
     "objectID": "Data.html#download-filtered-data",
@@ -32,7 +32,7 @@
     "href": "Preproc.html",
     "title": "3  Preprocessing",
     "section": "",
-    "text": "The preprocessing module offers extensive functionality for data preprocessing"
+    "text": "The preprocessing module offers extensive functionality for data preprocessing. All preprocessing is performed using the rtemis preprocess() command.  Hover over any preprocess option on the right menu to display a tooltip with the corresponding description.\nThe following operations are available:\n\nData Cleaning\n\nRemove constants\nRemove duplicates\n\nBatch Type Conversions, i.e. convert all columns of a type to another type\n\nCharacter to factor\nLogical to factor\nInteger to numeric\n\nConvert all variables with up to a particular number of unique values to factor\nIndividual variable conversion\n\nSelect a variable by name and convert to any type\n\nHandle missing data:\n\nFactor NA to missing: Considering all factor variables, convert missing values to a new level named “missing”. This is one way to impute categorical data\nImpute missing data: Uses iterative random forest with predictive mean matching to predict missing data from available data\n\nAdd missingness: Add an indicator column for each variable that is being imputed indicating cases whose data was imputed\n\nComplete cases: keep complete cases only\n\nData Transformations\n\nScale numeric data: Transformed all numeric columns to have a standard deviation of 1\nCenter numeric data: Transformed all numeric columns to have a mean of 0\nOne-hot encode categorical: One-hot all categorical variables\n\nReorder factor levels: Allows you to pick any factor in the dataset and explicitly set the order of levels. This affects the order categorical levels appear in plots, and which level is considered as the baseline in linear models.\nDelete columns: Allows removing columns from your data"
   },
   {
     "objectID": "Heat.html",
@@ -54,5 +54,12 @@
     "title": "4  Plot",
     "section": "",
     "text": "This is the main plotting module. It provides support for the following plot types:\n\nBoxplot\nHistogram\nDensity plot\nBar plot\nScatter (2D and 3D)\nMap (choropleth map)\nVolcano plot"
+  },
+  {
+    "objectID": "Data.html#view-loaded-data",
+    "href": "Data.html#view-loaded-data",
+    "title": "2  Data",
+    "section": "2.2 View loaded data",
+    "text": "2.2 View loaded data\nBy default, rtemislive will display the first 10 rows and the first 9 columns of data. This is to avoid slow loading of large datasets.\nUse the menu on the right to:\n\nSelect which columns to show\nChoose whether to paginate the table\nDefine number of rows to load\n\nThe data view allows you to:\n\nSort by any column in asceding or descending order\nSearch the contents of the table\n\n\n\n\n\n\nFigure 2.2: The Data tab provides a spreadsheet-like view of your data, which can be sorted and searched"
   }
 ]

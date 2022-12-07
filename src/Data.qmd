@@ -1,4 +1,4 @@
-# Data
+# Data {sec-data}
 
 The Data module allows you to:
 
@@ -7,10 +7,65 @@ The Data module allows you to:
     - sort by any column
     - search
 - Filter
-- Downloade filtered data
+- Download filtered data
 
 ## Uploading data
 
-**rtemislive** supports a wide range of file types, including the most popular formats for tabular data.
+```{r}
+#| label: fig-upload
+#| echo: false
+#| out-width: 33%
+#| fig-align: center
+#| fig-cap: rtemislive supports most popular tabular data file formats
+knitr::include_graphics("rtlive_upload.jpeg")
+```
 
-## Download filtered data
+**rtemislive** supports a wide range of file types, including some of the most popular 
+tabular data formats:
+
+- General purpose: .csv, .json
+- R: .rds
+- Excel: .xlsx
+- Apache Arrow: .arrow, .feather, .parquet
+- Stata: .dta
+- SPSS: .por, .sav, .zsav
+- SAS: .xpt
+- Matlab: .mat
+
+It is best to upload cleaned data.
+<br><br>
+Clean data includes:
+
+- Descriptive column names that always begin with letters (not numbers!) and contain no 
+    symbols other than underscores
+- Descriptive categorical levels:
+    e.g. "Female", "Male", not "1", "2"; "Control", "Case", not "0", "1")
+
+If you have prepared a dataset in R, the most
+convenient way to upload to rtemislive is to use `saveRD()` to save to an RDS and then
+upload that file. This will maintain all column classes.
+
+## View loaded data
+
+By default, rtemislive will display the first 10 rows and the first 9 columns of data.
+This is to avoid slow loading of large datasets.
+
+Use the menu on the right to: 
+
+- Select which columns to show
+- Choose whether to paginate the table
+- Define number of rows to load
+
+The data view allows you to:
+
+- Sort by any column in asceding or descending order
+- Search the contents of the table
+
+```{r}
+#| label: fig-data
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The Data tab provides a spreadsheet-like view of your data, which can be sorted and searched
+knitr::include_graphics("1_rtemislive_0.93.75_Data.jpeg")
+```
