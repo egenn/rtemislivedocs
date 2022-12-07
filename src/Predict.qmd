@@ -12,11 +12,12 @@ knitr::include_graphics("rtemislive_0.93.75_Predict.jpeg")
 The Predict module allows training of cross-validated and optionally tuned regression 
 and classification models.
 
-
 ## Resampling
 
 The "Outer Resampling" settings control the training-test splits. These control the
-arguments passed to the rtemis [`resample()`](https://rtemis.lambdamd.org/Resampling.html#the-resample-function) function
+arguments passed to the rtemis 
+[`resample()`](https://rtemis.lambdamd.org/Resampling.html#the-resample-function) 
+function.
 
 - **Resampling method**
     - Stratified subsampling
@@ -44,8 +45,9 @@ explain each hyperparameter.
 
 ## Hyperparameter tuning
 
-The **Predict** module uses rtemis [`elevate()`](https://rtemis.lambdamd.org/Elevate.html)
-to perform automatic nested resampling, which means 
+The **Predict** module uses the rtemis 
+[`elevate()`](https://rtemis.lambdamd.org/Elevate.html) function to perform automatic 
+nested resampling, which means:
 
 - Splitting full sample into multiple training & testing subsets
 - Splitting each training sample into training & validation subsets to perform hyperparameter tuning 

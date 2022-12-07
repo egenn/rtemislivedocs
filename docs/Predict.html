@@ -227,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The Predict module allows training of cross-validated and optionally tuned regression and classification models.</p>
 <section id="resampling" class="level2" data-number="11.1">
 <h2 data-number="11.1" class="anchored" data-anchor-id="resampling"><span class="header-section-number">11.1</span> Resampling</h2>
-<p>The “Outer Resampling” settings control the training-test splits. These control the arguments passed to the rtemis <a href="https://rtemis.lambdamd.org/Resampling.html#the-resample-function"><code>resample()</code></a> function</p>
+<p>The “Outer Resampling” settings control the training-test splits. These control the arguments passed to the rtemis <a href="https://rtemis.lambdamd.org/Resampling.html#the-resample-function"><code>resample()</code></a> function.</p>
 <ul>
 <li><strong>Resampling method</strong>
 <ul>
@@ -255,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="hyperparameter-tuning" class="level2" data-number="11.3">
 <h2 data-number="11.3" class="anchored" data-anchor-id="hyperparameter-tuning"><span class="header-section-number">11.3</span> Hyperparameter tuning</h2>
-<p>The <strong>Predict</strong> module uses rtemis <a href="https://rtemis.lambdamd.org/Elevate.html"><code>elevate()</code></a> to perform automatic nested resampling, which means</p>
+<p>The <strong>Predict</strong> module uses the rtemis <a href="https://rtemis.lambdamd.org/Elevate.html"><code>elevate()</code></a> function to perform automatic nested resampling, which means:</p>
 <ul>
 <li>Splitting full sample into multiple training &amp; testing subsets</li>
 <li>Splitting each training sample into training &amp; validation subsets to perform hyperparameter tuning (model selection)</li>
