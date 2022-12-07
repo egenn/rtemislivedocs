@@ -5,7 +5,7 @@ project:
 book:
   title: "rtemislive"
   author: "E.D. Gennatas"
-  date: "12/06/2022"
+  date: "12/07/2022"
   favicon: favicon.ico
   # google-analytics: "UA-127457544-1"
   sidebar:
@@ -14,7 +14,7 @@ book:
     title: " "
     tools:
       - icon: github
-        href: https://github.com/egenn/rtemis
+        href: https://github.com/egenn/rtemislivedocs
   chapters:
    - index.qmd
    - Introduction.qmd
