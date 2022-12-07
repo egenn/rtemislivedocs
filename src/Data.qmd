@@ -32,14 +32,14 @@ knitr::include_graphics("rtlive_upload.jpeg")
 **rtemislive** supports a wide range of file types, including some of the most popular 
 tabular data formats:
 
-- General purpose: .csv, .json
-- R: .rds
-- Excel: .xlsx
-- Apache Arrow: .arrow, .feather, .parquet
-- Stata: .dta
-- SPSS: .por, .sav, .zsav
-- SAS: .xpt
-- Matlab: .mat
+- General purpose: **.csv, .json**
+- R: **.rds**
+- Excel: **.xlsx**
+- Apache Arrow: **.arrow, .feather, .parquet**
+- Stata: **.dta**
+- SPSS: **.por, .sav, .zsav**
+- SAS: **.xpt**
+- Matlab: **.mat**
 
 It is best to upload cleaned data.
 <br><br>
