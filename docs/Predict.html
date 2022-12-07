@@ -184,7 +184,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#resampling" id="toc-resampling" class="nav-link active" data-scroll-target="#resampling"><span class="toc-section-number">11.1</span>  Resampling</a></li>
+  <li><a href="#algorithm" id="toc-algorithm" class="nav-link" data-scroll-target="#algorithm"><span class="toc-section-number">11.2</span>  Algorithm</a></li>
+  <li><a href="#hyperparameter-tuning" id="toc-hyperparameter-tuning" class="nav-link" data-scroll-target="#hyperparameter-tuning"><span class="toc-section-number">11.3</span>  Hyperparameter tuning</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -206,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="cell" data-layout-align="center" data-hash="Predict_cache/html/fig-predict_cd610c18d5a99e4dc643d33a8ec91610">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-predict" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -216,7 +224,25 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>The Predict module allows training of regression and classification models using:</p>
+<p>The Predict module allows training of cross-validated and optionally tuned regression and classification models.</p>
+<section id="resampling" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="resampling"><span class="header-section-number">11.1</span> Resampling</h2>
+<p>The “Outer Resampling” settings control the training-test splits. These control the arguments passed to the rtemis <a href="https://rtemis.lambdamd.org/Resampling.html#the-resample-function"><code>resample()</code></a> function</p>
+<ul>
+<li><strong>Resampling method</strong>
+<ul>
+<li>Stratified subsampling</li>
+<li>Stratified bootstrap</li>
+<li>K-fold</li>
+<li>Bootstrap</li>
+<li>Leave-one-out</li>
+</ul></li>
+<li><strong>Seed</strong>: for reproducibility, if you set a seed here, all train-test resamples will be the same between runs, e.g.&nbsp;this allows direct comparison of models trained with different algorithms</li>
+</ul>
+</section>
+<section id="algorithm" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="algorithm"><span class="header-section-number">11.2</span> Algorithm</h2>
+<p>Available algorithms:</p>
 <ul>
 <li><strong>GLMNET</strong> <a href="https://en.wikipedia.org/wiki/Elastic_net_regularization">Elastic Net Regularization</a></li>
 <li><strong>SVM</strong> <a href="https://en.wikipedia.org/wiki/Support-vector_machine">Support Vector Machine</a></li>
@@ -225,8 +251,19 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>GBM</strong> <a href="https://en.wikipedia.org/wiki/Gradient_boosting">Gradient Boosting</a></li>
 <li><strong>XGBoost</strong> (a gradient boosting implementation)</li>
 </ul>
+<p>Algorithm-specific options appear once an Algorithm has been selected. Tooltips explain each hyperparameter.</p>
+</section>
+<section id="hyperparameter-tuning" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="hyperparameter-tuning"><span class="header-section-number">11.3</span> Hyperparameter tuning</h2>
+<p>The <strong>Predict</strong> module uses rtemis <a href="https://rtemis.lambdamd.org/Elevate.html"><code>elevate()</code></a> to perform automatic nested resampling, which means</p>
+<ul>
+<li>Splitting full sample into multiple training &amp; testing subsets</li>
+<li>Splitting each training sample into training &amp; validation subsets to perform hyperparameter tuning (model selection)</li>
+</ul>
+<p>A musical note in front of an input box means the hyperparameter is tunable. Automatic hyperparameter tuning will be performed if more than one value is entered. <br><br> For example, if you have selected Gradient Boosting as the learning algorithm, you can input “2, 3” in “Max depth”. Internal 5-fold cross-validation of each training set will be performed, the best overall performing combination of hyperparameters will be chosen, and a model will be retrained on the full training set using the best hyperparameter combination.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

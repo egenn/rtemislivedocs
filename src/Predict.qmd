@@ -9,7 +9,28 @@
 knitr::include_graphics("rtemislive_0.93.75_Predict.jpeg")
 ```
 
-The Predict module allows training of regression and classification models using:
+The Predict module allows training of cross-validated and optionally tuned regression 
+and classification models.
+
+
+## Resampling
+
+The "Outer Resampling" settings control the training-test splits. These control the
+arguments passed to the rtemis [`resample()`](https://rtemis.lambdamd.org/Resampling.html#the-resample-function) function
+
+- **Resampling method**
+    - Stratified subsampling
+    - Stratified bootstrap
+    - K-fold
+    - Bootstrap
+    - Leave-one-out
+- **Seed**: for reproducibility, if you set a seed here, all train-test
+resamples will be the same between runs, e.g. this allows direct comparison of models
+trained with different algorithms
+
+## Algorithm
+
+Available algorithms:
 
 - **GLMNET** [Elastic Net Regularization](https://en.wikipedia.org/wiki/Elastic_net_regularization)
 - **SVM** [Support Vector Machine](https://en.wikipedia.org/wiki/Support-vector_machine)
@@ -17,3 +38,24 @@ The Predict module allows training of regression and classification models using
 - **RF** [Random Forest](https://en.wikipedia.org/wiki/Random_forest)
 - **GBM** [Gradient Boosting](https://en.wikipedia.org/wiki/Gradient_boosting)
 - **XGBoost** (a gradient boosting implementation)
+
+Algorithm-specific options appear once an Algorithm has been selected. Tooltips
+explain each hyperparameter. 
+
+## Hyperparameter tuning
+
+The **Predict** module uses rtemis [`elevate()`](https://rtemis.lambdamd.org/Elevate.html)
+to perform automatic nested resampling, which means 
+
+- Splitting full sample into multiple training & testing subsets
+- Splitting each training sample into training & validation subsets to perform hyperparameter tuning 
+(model selection)
+
+A musical note in front of an input box means the hyperparameter is tunable. Automatic hyperparameter tuning will be performed if more than
+one value is entered. 
+<br><br>
+For example, if you have selected Gradient Boosting as the
+learning algorithm, you can input "2, 3" in "Max depth". Internal 5-fold cross-validation
+of each training set will be performed, the best overall performing combination of
+hyperparameters will be chosen, and a model will be retrained on the full training set
+using the best hyperparameter combination.

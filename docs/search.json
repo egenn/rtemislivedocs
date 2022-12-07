@@ -117,5 +117,26 @@
     "title": "14  PDB",
     "section": "",
     "text": "Figure 14.1: The PDB module provides 3D visualization of protein structures\n\n\n\n\nThe PDB module allows visualization of protein structures featured in the Protein Data Bank (PDB)."
+  },
+  {
+    "objectID": "Predict.html#resampling",
+    "href": "Predict.html#resampling",
+    "title": "11  Predict",
+    "section": "11.1 Resampling",
+    "text": "11.1 Resampling\nThe “Outer Resampling” settings control the training-test splits. These control the arguments passed to the rtemis resample() function\n\nResampling method\n\nStratified subsampling\nStratified bootstrap\nK-fold\nBootstrap\nLeave-one-out\n\nSeed: for reproducibility, if you set a seed here, all train-test resamples will be the same between runs, e.g. this allows direct comparison of models trained with different algorithms"
+  },
+  {
+    "objectID": "Predict.html#algorithm",
+    "href": "Predict.html#algorithm",
+    "title": "11  Predict",
+    "section": "11.2 Algorithm",
+    "text": "11.2 Algorithm\nAvailable algorithms:\n\nGLMNET Elastic Net Regularization\nSVM Support Vector Machine\nCART Classification and Regression Trees\nRF Random Forest\nGBM Gradient Boosting\nXGBoost (a gradient boosting implementation)\n\nAlgorithm-specific options appear once an Algorithm has been selected. Tooltips explain each hyperparameter."
+  },
+  {
+    "objectID": "Predict.html#hyperparameter-tuning",
+    "href": "Predict.html#hyperparameter-tuning",
+    "title": "11  Predict",
+    "section": "11.3 Hyperparameter tuning",
+    "text": "11.3 Hyperparameter tuning\nThe Predict module uses rtemis elevate() to perform automatic nested resampling, which means\n\nSplitting full sample into multiple training & testing subsets\nSplitting each training sample into training & validation subsets to perform hyperparameter tuning (model selection)\n\nA musical note in front of an input box means the hyperparameter is tunable. Automatic hyperparameter tuning will be performed if more than one value is entered.  For example, if you have selected Gradient Boosting as the learning algorithm, you can input “2, 3” in “Max depth”. Internal 5-fold cross-validation of each training set will be performed, the best overall performing combination of hyperparameters will be chosen, and a model will be retrained on the full training set using the best hyperparameter combination."
   }
 ]
