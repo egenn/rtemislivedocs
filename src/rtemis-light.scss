@@ -302,3 +302,9 @@ $container-lg: $container-large-desktop  !default;
 .rtimg {
   filter: drop-shadow(0 0 .3rem #333) !important;
 }
+
+// Search box bg
+.aa-Autocomplete .aa-Form,
+.aa-DetachedFormContainer .aa-Form {
+  background-color: $body-bg;
+}
