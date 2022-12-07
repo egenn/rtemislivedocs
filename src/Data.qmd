@@ -11,12 +11,12 @@ knitr::include_graphics("0_rtemislive_0.93.75_Welcome.jpeg")
 
 The Data module allows you to:
 
-- Upload data onto the platform
-- View your data as a spreadsheet
+- **Upload** data onto the platform
+- **View** your data as a spreadsheet
     - sort by any column
     - search
-- Filter
-- Download filtered data
+- **Filter**
+- **Download** filtered data
 
 ## Uploading data
 
