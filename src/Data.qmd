@@ -1,5 +1,14 @@
 # Data {sec-data}
 
+```{r}
+#| label: fig-upload
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: rtemislive upload screen
+knitr::include_graphics("0_rtemislive_0.93.75_Welcome.jpeg")
+```
+
 The Data module allows you to:
 
 - Upload data onto the platform
@@ -12,7 +21,7 @@ The Data module allows you to:
 ## Uploading data
 
 ```{r}
-#| label: fig-upload
+#| label: fig-formats
 #| echo: false
 #| out-width: 33%
 #| fig-align: center

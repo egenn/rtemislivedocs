@@ -1,8 +1,18 @@
 # Graph
 
-Graph theory module:
+```{r}
+#| label: fig-graph
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The Graph module allows plotting of networks
+knitr::include_graphics("5_rtemislive_0.93.75_Network.jpeg")
+```
 
-- Visualization
-    - igraph
-    - NetworkD3
-    - graphjs
+Graph theory module allows plotting networks constructed from the correlation matrix
+of continuous variables. It supports multiple graph layout and clustering algorithms,
+and features three visualization engines:
+
+- igraph
+- NetworkD3
+- graphjs

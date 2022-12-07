@@ -1,0 +1,20 @@
+# Protein {sec-protein}
+
+```{r}
+#| label: fig-decom
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The Protein module visualizes the primary structure of proteins
+knitr::include_graphics("9_rtemislive_0.93.75_ProteinSequence.jpeg")
+```
+
+The Protein module allows visualizing the primary structure, i.e. amino acid sequence,
+of proteins.
+
+It allows multiple types of annotations:
+
+- Site annotations
+- Disease variants
+- Region annotations
+- Post-translational modifications

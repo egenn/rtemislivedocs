@@ -1,0 +1,13 @@
+# Decom {sec-decom}
+
+```{r}
+#| label: fig-decom
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The Decom module allows decomposition / matrix factorization of continuous variables
+knitr::include_graphics("6_rtemislive_0.93.75_Decomposition.jpeg")
+```
+
+The decomposition module provide algorithms for linear and nonlinear decomposition /
+matrix factorization.

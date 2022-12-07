@@ -1,5 +1,14 @@
 # Plot {sec-plot}
 
+```{r}
+#| label: fig-plot
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The Plot tab is the main visualization module
+knitr::include_graphics("3_rtemislive_0.93.75_Plot.jpeg")
+```
+
 This is the main plotting module. It provides support for the following plot types:
 
 - Boxplot
@@ -9,3 +18,23 @@ This is the main plotting module. It provides support for the following plot typ
 - Scatter (2D and 3D)
 - Map (choropleth map)
 - Volcano plot
+
+## Exporting plots
+
+To export a plot:
+
+- Use the plotting drop-down menu (second of the top-right menus) to switch on "Modebar"
+- Set the theme, palette, output format, output height, and output width
+- Hover over plot and click the camera icon "Download plot"
+
+For example, for journal publications you may want to be in light mode using the top-right
+switch and select the "Grid" theme from the Plot drop-down:
+
+```{r}
+#| label: fig-export
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The Plot options drop-down allows setting plot export options
+knitr::include_graphics("12_rtemislive_0.93.75_Themes&Export.jpeg")
+```

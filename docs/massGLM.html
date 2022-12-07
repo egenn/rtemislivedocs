@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>rtemislive - 4&nbsp; Plot</title>
+<title>rtemislive - 8&nbsp; massGLM</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Heat.html" rel="next">
-<link href="./Preproc.html" rel="prev">
+<link href="./MRview.html" rel="next">
+<link href="./Decom.html" rel="prev">
 <link href="./favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Plot</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">massGLM</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Plot.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Plot</span></a>
+  <a href="./Plot.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Plot</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./massGLM.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">massGLM</span></a>
+  <a href="./massGLM.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">massGLM</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -169,20 +169,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#exporting-plots" id="toc-exporting-plots" class="nav-link active" data-scroll-target="#exporting-plots"><span class="toc-section-number">4.1</span>  Exporting plots</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Plot</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">massGLM</span></h1>
 </div>
 
 
@@ -199,46 +193,26 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-plot" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-volcano" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="3_rtemislive_0.93.75_Plot.jpeg" class="img-fluid figure-img" style="width:100.0%"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;4.1: The Plot tab is the main visualization module</figcaption><p></p>
+<p><img src="7a_rtemislive_0.93.75_massGLM_Volcano.jpeg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;8.1: massGLM Volcano plot</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p>This is the main plotting module. It provides support for the following plot types:</p>
-<ul>
-<li>Boxplot</li>
-<li>Histogram</li>
-<li>Density plot</li>
-<li>Bar plot</li>
-<li>Scatter (2D and 3D)</li>
-<li>Map (choropleth map)</li>
-<li>Volcano plot</li>
-</ul>
-<section id="exporting-plots" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="exporting-plots"><span class="header-section-number">4.1</span> Exporting plots</h2>
-<p>To export a plot:</p>
-<ul>
-<li>Use the plotting drop-down menu (second of the top-right menus) to switch on “Modebar”</li>
-<li>Set the theme, palette, output format, output height, and output width</li>
-<li>Hover over plot and click the camera icon “Download plot”</li>
-</ul>
-<p>For example, for journal publications you may want to be in light mode using the top-right switch and select the “Grid” theme from the Plot drop-down:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-export" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-manhattan" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="12_rtemislive_0.93.75_Themes&amp;Export.jpeg" class="img-fluid figure-img" style="width:100.0%"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;4.2: The Plot options drop-down allows setting plot export options</figcaption><p></p>
+<p><img src="7b_rtemislive_0.93.75_massGLM_Manhattan.jpeg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;8.2: massGLM Manhattan plot</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -491,13 +465,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Preproc.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preprocessing</span></span>
+      <a href="./Decom.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Decom</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Heat.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Heatmap</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./MRview.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">MRview</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

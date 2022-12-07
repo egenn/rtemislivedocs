@@ -1,0 +1,14 @@
+# PDB {sec-pdb}
+
+```{r}
+#| label: fig-decom
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The PDB module provides 3D visualization of protein structures
+knitr::include_graphics("10_rtemislive_0.93.75_PDB.jpeg")
+```
+
+The PDB module allows visualization of protein structures featured in the 
+[Protein Data Bank (PDB)](https://www.rcsb.org/).
+

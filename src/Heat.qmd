@@ -1,4 +1,13 @@
 # Heatmap
 
-The heatmap module allows plotting heatmaps of the correlation matrix of any number of continuous variables.
+```{r}
+#| label: fig-heatmap
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The Heat tab allows plotting heatmaps of correlation matrices
+knitr::include_graphics("4_rtemislive_0.93.75_Heatmap.jpeg")
+```
 
+The heatmap module allows plotting heatmaps of the correlation matrix of any number of 
+continuous variables.

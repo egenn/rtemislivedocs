@@ -1,0 +1,10 @@
+# MRview {sec-mrview}
+
+```{r}
+#| label: fig-mrview
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: MRI Viewer
+knitr::include_graphics("8_rtemislive_0.93.75_MRIViewer.jpeg")
+```

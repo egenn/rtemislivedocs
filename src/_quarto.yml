@@ -23,6 +23,11 @@ book:
    - Plot.qmd
    - Heat.qmd
    - Graph.qmd
+   - Decom.qmd
+   - massGLM.qmd
+   - MRview.qmd
+   - Protein.qmd
+   - PDB.qmd
 
 bibliography: references.bib
 

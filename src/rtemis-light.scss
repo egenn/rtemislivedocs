@@ -41,7 +41,8 @@ $rtdark:       #093f44;
 $rtlight:      #8ff6ff;
 // Body
 
-$body-bg:                   $white !default;
+// $body-bg:                   $white !default;
+$body-bg:                   #d9d9d9 !default;
 $body-color:                $black !default;
 
 @function body-mix($weight) {

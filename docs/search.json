@@ -11,14 +11,14 @@
     "href": "Introduction.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "rtemislive is organized in modules. The user can toggle modules ON and OFF using the first drop-down menu on the top right.\nCustom installations allow to specify whether a dataset should be pre-loaded and allow setting the initial state of most application settings, including modules and themes.\n The documentation on this site ir organized by module: each chapter, accessible from the navigation in the lest, corresponds to an individual module.\n rtemislive is built on top of rtemis\nData operations, including filtering, selecting and a subset of data aggregation operations, performed in real time using data.table."
+    "text": "Figure 1.1: The first drop-down menu is the Module selector\n\n\n\n\nrtemislive is organized in modules. The user can toggle modules ON and OFF using the first drop-down menu on the top right.\nCustom installations allow to specify whether a dataset should be pre-loaded and allow setting the initial state of most application settings, including modules and themes.\n The documentation on this site ir organized by module: each chapter, accessible from the navigation in the lest, corresponds to an individual module.\n rtemislive is built on top of rtemis\nData operations, including filtering, selecting and a subset of data aggregation operations, performed in real time using data.table."
   },
   {
     "objectID": "Data.html#uploading-data",
     "href": "Data.html#uploading-data",
     "title": "2  Data",
     "section": "2.1 Uploading data",
-    "text": "2.1 Uploading data\n\n\n\n\n\nFigure 2.1: rtemislive supports most popular tabular data file formats\n\n\n\n\nrtemislive supports a wide range of file types, including some of the most popular tabular data formats:\n\nGeneral purpose: .csv, .json\nR: .rds\nExcel: .xlsx\nApache Arrow: .arrow, .feather, .parquet\nStata: .dta\nSPSS: .por, .sav, .zsav\nSAS: .xpt\nMatlab: .mat\n\nIt is best to upload cleaned data.  Clean data includes:\n\nDescriptive column names that always begin with letters (not numbers!) and contain no symbols other than underscores\nDescriptive categorical levels: e.g. “Female”, “Male”, not “1”, “2”; “Control”, “Case”, not “0”, “1”)\n\nIf you have prepared a dataset in R, the most convenient way to upload to rtemislive is to use saveRD() to save to an RDS and then upload that file. This will maintain all column classes."
+    "text": "2.1 Uploading data\n\n\n\n\n\nFigure 2.2: rtemislive supports most popular tabular data file formats\n\n\n\n\nrtemislive supports a wide range of file types, including some of the most popular tabular data formats:\n\nGeneral purpose: .csv, .json\nR: .rds\nExcel: .xlsx\nApache Arrow: .arrow, .feather, .parquet\nStata: .dta\nSPSS: .por, .sav, .zsav\nSAS: .xpt\nMatlab: .mat\n\nIt is best to upload cleaned data.  Clean data includes:\n\nDescriptive column names that always begin with letters (not numbers!) and contain no symbols other than underscores\nDescriptive categorical levels: e.g. “Female”, “Male”, not “1”, “2”; “Control”, “Case”, not “0”, “1”)\n\nIf you have prepared a dataset in R, the most convenient way to upload to rtemislive is to use saveRD() to save to an RDS and then upload that file. This will maintain all column classes."
   },
   {
     "objectID": "Data.html#download-filtered-data",
@@ -32,34 +32,76 @@
     "href": "Preproc.html",
     "title": "3  Preprocessing",
     "section": "",
-    "text": "The preprocessing module offers extensive functionality for data preprocessing. All preprocessing is performed using the rtemis preprocess() command.  Hover over any preprocess option on the right menu to display a tooltip with the corresponding description.\nThe following operations are available:\n\nData Cleaning\n\nRemove constants\nRemove duplicates\n\nBatch Type Conversions, i.e. convert all columns of a type to another type\n\nCharacter to factor\nLogical to factor\nInteger to numeric\n\nConvert all variables with up to a particular number of unique values to factor\nIndividual variable conversion\n\nSelect a variable by name and convert to any type\n\nHandle missing data:\n\nFactor NA to missing: Considering all factor variables, convert missing values to a new level named “missing”. This is one way to impute categorical data\nImpute missing data: Uses iterative random forest with predictive mean matching to predict missing data from available data\n\nAdd missingness: Add an indicator column for each variable that is being imputed indicating cases whose data was imputed\n\nComplete cases: keep complete cases only\n\nData Transformations\n\nScale numeric data: Transformed all numeric columns to have a standard deviation of 1\nCenter numeric data: Transformed all numeric columns to have a mean of 0\nOne-hot encode categorical: One-hot all categorical variables\n\nReorder factor levels: Allows you to pick any factor in the dataset and explicitly set the order of levels. This affects the order categorical levels appear in plots, and which level is considered as the baseline in linear models.\nDelete columns: Allows removing columns from your data"
+    "text": "Figure 3.1: The Preproc module checks and preprocesses data\n\n\n\n\nThe preprocessing module provides:\n\nSummary of your data: this is the output of the rtemis check_data() function\nExtensive options for data preprocessing: preprocessing is performed using the rtemis preprocess() command.  Hover over any preprocess option on the right menu to display a tooltip with the corresponding description.\n\nThe following operations are available:\n\nData Cleaning\n\nRemove constants\nRemove duplicates\n\nBatch Type Conversions, i.e. convert all columns of a type to another type\n\nCharacter to factor\nLogical to factor\nInteger to numeric\n\nConvert all variables with up to a particular number of unique values to factor\nIndividual variable conversion\n\nSelect a variable by name and convert to any type\n\nHandle missing data:\n\nFactor NA to missing: Considering all factor variables, convert missing values to a new level named “missing”. This is one way to impute categorical data\nImpute missing data: Uses iterative random forest with predictive mean matching to predict missing data from available data\n\nAdd missingness: Add an indicator column for each variable that is being imputed indicating cases whose data was imputed\n\nComplete cases: keep complete cases only\n\nData Transformations\n\nScale numeric data: Transformed all numeric columns to have a standard deviation of 1\nCenter numeric data: Transformed all numeric columns to have a mean of 0\nOne-hot encode categorical: One-hot all categorical variables\n\nReorder factor levels: Allows you to pick any factor in the dataset and explicitly set the order of levels. This affects the order categorical levels appear in plots, and which level is considered as the baseline in linear models.\nDelete columns: Allows removing columns from your data"
   },
   {
     "objectID": "Heat.html",
     "href": "Heat.html",
     "title": "5  Heatmap",
     "section": "",
-    "text": "The heatmap module allows plotting heatmaps of the correlation matrix of any number of continuous variables."
+    "text": "Figure 5.1: The Heat tab allows plotting heatmaps of correlation matrices\n\n\n\n\nThe heatmap module allows plotting heatmaps of the correlation matrix of any number of continuous variables."
   },
   {
     "objectID": "Graph.html",
     "href": "Graph.html",
     "title": "6  Graph",
     "section": "",
-    "text": "Graph theory module:\n\nVisualization\n\nigraph\nNetworkD3\ngraphjs"
+    "text": "Figure 6.1: The Graph module allows plotting of networks\n\n\n\n\nGraph theory module allows plotting networks constructed from the correlation matrix of continuous variables. It supports multiple graph layout and clustering algorithms, and features three visualization engines:\n\nigraph\nNetworkD3\ngraphjs"
   },
   {
     "objectID": "Plot.html",
     "href": "Plot.html",
     "title": "4  Plot",
     "section": "",
-    "text": "This is the main plotting module. It provides support for the following plot types:\n\nBoxplot\nHistogram\nDensity plot\nBar plot\nScatter (2D and 3D)\nMap (choropleth map)\nVolcano plot"
+    "text": "Figure 4.1: The Plot tab is the main visualization module\n\n\n\n\nThis is the main plotting module. It provides support for the following plot types:\n\nBoxplot\nHistogram\nDensity plot\nBar plot\nScatter (2D and 3D)\nMap (choropleth map)\nVolcano plot"
   },
   {
     "objectID": "Data.html#view-loaded-data",
     "href": "Data.html#view-loaded-data",
     "title": "2  Data",
     "section": "2.2 View loaded data",
-    "text": "2.2 View loaded data\nBy default, rtemislive will display the first 10 rows and the first 9 columns of data. This is to avoid slow loading of large datasets.\nUse the menu on the right to:\n\nSelect which columns to show\nChoose whether to paginate the table\nDefine number of rows to load\n\nThe data view allows you to:\n\nSort by any column in asceding or descending order\nSearch the contents of the table\n\n\n\n\n\n\nFigure 2.2: The Data tab provides a spreadsheet-like view of your data, which can be sorted and searched"
+    "text": "2.2 View loaded data\nBy default, rtemislive will display the first 10 rows and the first 9 columns of data. This is to avoid slow loading of large datasets.\nUse the menu on the right to:\n\nSelect which columns to show\nChoose whether to paginate the table\nDefine number of rows to load\n\nThe data view allows you to:\n\nSort by any column in asceding or descending order\nSearch the contents of the table\n\n\n\n\n\n\nFigure 2.3: The Data tab provides a spreadsheet-like view of your data, which can be sorted and searched"
+  },
+  {
+    "objectID": "massGLM.html",
+    "href": "massGLM.html",
+    "title": "8  massGLM",
+    "section": "",
+    "text": "Figure 8.1: massGLM Volcano plot\n\n\n\n\n\n\n\n\n\nFigure 8.2: massGLM Manhattan plot"
+  },
+  {
+    "objectID": "Decom.html",
+    "href": "Decom.html",
+    "title": "7  Decom",
+    "section": "",
+    "text": "Figure 7.1: The Decom module allows decomposition / matrix factorization of continuous variables\n\n\n\n\nThe decomposition module provide algorithms for linear and nonlinear decomposition / matrix factorization."
+  },
+  {
+    "objectID": "MRview.html",
+    "href": "MRview.html",
+    "title": "9  MRview",
+    "section": "",
+    "text": "Figure 9.1: MRI Viewer"
+  },
+  {
+    "objectID": "Protein.html",
+    "href": "Protein.html",
+    "title": "10  Protein",
+    "section": "",
+    "text": "Figure 10.1: The Protein module visualizes the primary structure of proteins\n\n\n\n\nThe Protein module allows visualizing the primary structure, i.e. amino acid sequence, of proteins.\nIt allows multiple types of annotations:\n\nSite annotations\nDisease variants\nRegion annotations\nPost-translational modifications"
+  },
+  {
+    "objectID": "Plot.html#exporting-plots",
+    "href": "Plot.html#exporting-plots",
+    "title": "4  Plot",
+    "section": "4.1 Exporting plots",
+    "text": "4.1 Exporting plots\nTo export a plot:\n\nUse the plotting drop-down menu (second of the top-right menus) to switch on “Modebar”\nSet the theme, palette, output format, output height, and output width\nHover over plot and click the camera icon “Download plot”\n\nFor example, for journal publications you may want to be in light mode using the top-right switch and select the “Grid” theme from the Plot drop-down:\n\n\n\n\n\nFigure 4.2: The Plot options drop-down allows setting plot export options"
+  },
+  {
+    "objectID": "PDB.html",
+    "href": "PDB.html",
+    "title": "11  PDB",
+    "section": "",
+    "text": "Figure 11.1: The PDB module provides 3D visualization of protein structures\n\n\n\n\nThe PDB module allows visualization of protein structures featured in the Protein Data Bank (PDB)."
   }
 ]

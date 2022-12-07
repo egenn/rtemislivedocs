@@ -1,4 +1,13 @@
-# Introduction
+# Introduction {sec-intro}
+
+```{r}
+#| label: fig-menu
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The first drop-down menu is the Module selector
+knitr::include_graphics("2_rtemislive_0.93.75_Plot&ModuleMenu.jpeg")
+```
 
 **rtemislive** is organized in modules.
 The user can toggle modules ON and OFF using the first drop-down menu on the

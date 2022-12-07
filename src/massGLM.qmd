@@ -1,0 +1,19 @@
+# massGLM {sec-massglm}
+
+```{r}
+#| label: fig-volcano
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: massGLM Volcano plot
+knitr::include_graphics("7a_rtemislive_0.93.75_massGLM_Volcano.jpeg")
+```
+
+```{r}
+#| label: fig-manhattan
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: massGLM Manhattan plot
+knitr::include_graphics("7b_rtemislive_0.93.75_massGLM_Manhattan.jpeg")
+```
