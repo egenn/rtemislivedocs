@@ -257,10 +257,11 @@ ul.task-list li input[type="checkbox"] {
 <li>SAS: <strong>.xpt</strong></li>
 <li>Matlab: <strong>.mat</strong></li>
 </ul>
-<p>It is best to upload cleaned data. <br><br> Clean data includes:</p>
+<p>It is best to upload clean data, when possible. <br> Clean data includes:</p>
 <ul>
 <li>Descriptive <strong>column names</strong> that always begin with letters (not numbers!) and contain no symbols other than underscores</li>
 <li>Descriptive <strong>categorical levels</strong>: e.g.&nbsp;“Female”, “Male”, not “1”, “2”; “Control”, “Case”, not “0”, “1”)</li>
+<li><strong>Missing values</strong> indicated by “NA”</li>
 </ul>
 <p>If you have prepared a dataset in R, the most convenient way to upload to rtemislive is to use <code>saveRD()</code> in R to save to an RDS and then upload that file. This will maintain all column classes.</p>
 </section>

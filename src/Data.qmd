@@ -41,14 +41,15 @@ tabular data formats:
 - SAS: **.xpt**
 - Matlab: **.mat**
 
-It is best to upload cleaned data.
-<br><br>
+It is best to upload clean data, when possible.
+<br>
 Clean data includes:
 
 - Descriptive **column names** that always begin with letters (not numbers!) and contain no 
     symbols other than underscores
 - Descriptive **categorical levels**:
     e.g. "Female", "Male", not "1", "2"; "Control", "Case", not "0", "1")
+- **Missing values** indicated by "NA"
 
 If you have prepared a dataset in R, the most
 convenient way to upload to rtemislive is to use `saveRD()` in R to save to an RDS and 
