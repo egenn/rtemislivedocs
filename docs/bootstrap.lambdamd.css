@@ -125,6 +125,7 @@ li code:not(.sourceCode) {
     background-color: transparent;
 }
 
+/* for rtemis transparent png */
 .imlogo {
     width: 72%;
     background-color: #565656;
@@ -140,4 +141,9 @@ li code:not(.sourceCode) {
     /* margin: auto; */
     margin-bottom: 18px;
     /* margin: 18px; */
+}
+
+/* for rtascii */
+.fansi-output {
+    line-height: 1.24;
 }

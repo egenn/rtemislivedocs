@@ -46,8 +46,6 @@ Classification
 </figure>
 <br>
 
-This website was created using [Quarto](https://quarto.org/).
-
 ```{r}
 #| echo: false
 rtemis:::rtascii()

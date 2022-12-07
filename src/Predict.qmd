@@ -1,4 +1,4 @@
-# Predictive Modeling {sec-predict}
+# Predict {sec-predict}
 
 ```{r}
 #| label: fig-predict
