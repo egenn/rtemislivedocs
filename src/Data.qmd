@@ -45,14 +45,14 @@ It is best to upload cleaned data.
 <br><br>
 Clean data includes:
 
-- Descriptive column names that always begin with letters (not numbers!) and contain no 
+- Descriptive **column names** that always begin with letters (not numbers!) and contain no 
     symbols other than underscores
-- Descriptive categorical levels:
+- Descriptive **categorical levels**:
     e.g. "Female", "Male", not "1", "2"; "Control", "Case", not "0", "1")
 
 If you have prepared a dataset in R, the most
-convenient way to upload to rtemislive is to use `saveRD()` to save to an RDS and then
-upload that file. This will maintain all column classes.
+convenient way to upload to rtemislive is to use `saveRD()` in R to save to an RDS and 
+then upload that file. This will maintain all column classes.
 
 ## View loaded data
 
@@ -61,14 +61,14 @@ This is to avoid slow loading of large datasets.
 
 Use the menu on the right to: 
 
-- Select which columns to show
-- Choose whether to paginate the table
-- Define number of rows to load
+- Select which **columns** to show
+- Choose whether to **paginate** the table
+- Define number of **rows** to load
 
 The data view allows you to:
 
-- Sort by any column in asceding or descending order
-- Search the contents of the table
+- **Sort** by any column in asceding or descending order
+- **Search** the contents of the table
 
 ```{r}
 #| label: fig-data
