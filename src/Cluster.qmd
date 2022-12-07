@@ -11,14 +11,14 @@ knitr::include_graphics("rtemislive_0.93.75_Clustering.jpeg")
 
 The Cluster module allows clustering of cases. The following algorithms are included:
 
-- KMEANS K-Means Clustering
-- CMEANS Fuzzy C-Means Clustering
-- PAM Patitioning Around Medoids (K-Medoids)
-- PAMK Patitioning Around Medoids with k estimation
-- SPEC Spectral Clustering
-- NGAS Neural Gas Clustering
-- MEANSHIFT Meanshift Clustering
-- HOPACH Hierarchical Ordered Partitioning and Collapsing Hybrid
-- EMC Expectation Maximization Clustering
-- DBSCAN Density-Based Spatial Clustering of Applications with Noise
-- HARDCL Hard Competitive Learning
+- **KMEANS** K-Means Clustering
+- **CMEANS** Fuzzy C-Means Clustering
+- **PAM** Patitioning Around Medoids (K-Medoids)
+- **PAMK** Patitioning Around Medoids with k estimation
+- **SPEC** Spectral Clustering
+- **NGAS** Neural Gas Clustering
+- **MEANSHIFT** Meanshift Clustering
+- **HOPACH** Hierarchical Ordered Partitioning and Collapsing Hybrid
+- **EMC** Expectation Maximization Clustering
+- **DBSCAN** Density-Based Spatial Clustering of Applications with Noise
+- **HARDCL** Hard Competitive Learning

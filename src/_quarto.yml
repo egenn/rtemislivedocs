@@ -20,6 +20,7 @@ book:
    - Introduction.qmd
    - Data.qmd
    - Preproc.qmd
+   - Describe.qmd
    - Plot.qmd
    - Heat.qmd
    - Graph.qmd

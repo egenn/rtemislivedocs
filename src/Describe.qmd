@@ -1,0 +1,32 @@
+# Describe {sex-describe}
+
+```{r}
+#| label: fig-decom
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The Cluster module allows clustering of cases
+knitr::include_graphics("rtemislive_0.93.75_Describe.jpeg")
+```
+
+The **Describe** module allows you to select any number of variables of any class and
+provides a summary output grouped by type:
+
+- **Numeric**: includes all numeric variables (incl. integer)
+    - Min
+    - Max
+    - Median
+    - Mean
+    - SD
+- **Categorical**: includes all factors and character variables
+    - N unique
+    - Mode
+    - Counts
+    - Pct missing
+- **Date**: includes all date variables
+    - Min
+    - Max
+    - Median
+    - Mean
+    - Pct missing
+    
