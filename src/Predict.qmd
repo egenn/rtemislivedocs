@@ -1,0 +1,19 @@
+# Predictive Modeling {sec-predict}
+
+```{r}
+#| label: fig-predict
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+#| fig-cap: The Predict module makes advanced machine learning available in a few clicks
+knitr::include_graphics("rtemislive_0.93.75_Predict.jpeg")
+```
+
+The Predict module allows training of regression and classification models using:
+
+- GLMNET [Elastic Net Regularization](https://en.wikipedia.org/wiki/Elastic_net_regularization)
+- SVM [Support Vector Machine](https://en.wikipedia.org/wiki/Support-vector_machine)
+- CART [Classification and Regression Trees](https://en.wikipedia.org/wiki/Decision_tree_learning)
+- RF [Random Forest](https://en.wikipedia.org/wiki/Random_forest)
+- GBM [Gradient Boosting](https://en.wikipedia.org/wiki/Gradient_boosting)
+- XGBoost (a gradient boosting implementation)

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>rtemislive - 8&nbsp; Decom</title>
+<title>rtemislive - 7&nbsp; Cluster</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./massGLM.html" rel="next">
-<link href="./Cluster.html" rel="prev">
+<link href="./Decom.html" rel="next">
+<link href="./Graph.html" rel="prev">
 <link href="./favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Decom</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cluster</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -141,12 +141,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Cluster.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cluster</span></a>
+  <a href="./Cluster.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cluster</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Decom.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Decom</span></a>
+  <a href="./Decom.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Decom</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -186,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Decom</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cluster</span></h1>
 </div>
 
 
@@ -205,25 +205,25 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div id="fig-decom" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="6_rtemislive_0.93.75_Decomposition.jpeg" class="img-fluid figure-img" style="width:100.0%"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;8.1: The Decom module allows decomposition / matrix factorization of continuous variables</figcaption><p></p>
+<p><img src="rtemislive_0.93.75_Clustering.jpeg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.1: The Cluster module allows clustering of cases</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p>The decomposition module provide algorithms for linear and nonlinear decomposition / matrix factorization.</p>
-<p>The following algorithms are supported:</p>
+<p>The Cluster module allows clustering of cases. The following algorithms are included:</p>
 <ul>
-<li>PCA Principal Component Analysis</li>
-<li>ICA Independent Component Analysis</li>
-<li>NMF Non-negative Matrix Factorization</li>
-<li>SPCA Sparse PCA</li>
-<li>Kernel PCA Kernel Principal Component Analysis</li>
-<li>ISOMAP ISOMAP</li>
-<li>MDS Multidimensional scaling</li>
-<li>LLE Locally Linear Embedding</li>
-<li>tSNE t-distributed Stochastic Neighbor Embedding</li>
-<li>UMAP Uniform Manifold Approximation and Projection</li>
+<li>KMEANS K-Means Clustering</li>
+<li>CMEANS Fuzzy C-Means Clustering</li>
+<li>PAM Patitioning Around Medoids (K-Medoids)</li>
+<li>PAMK Patitioning Around Medoids with k estimation</li>
+<li>SPEC Spectral Clustering</li>
+<li>NGAS Neural Gas Clustering</li>
+<li>MEANSHIFT Meanshift Clustering</li>
+<li>HOPACH Hierarchical Ordered Partitioning and Collapsing Hybrid</li>
+<li>EMC Expectation Maximization Clustering</li>
+<li>DBSCAN Density-Based Spatial Clustering of Applications with Noise</li>
+<li>HARDCL Hard Competitive Learning</li>
 </ul>
 
 
@@ -479,13 +479,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Cluster.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cluster</span></span>
+      <a href="./Graph.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Graph</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./massGLM.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">massGLM</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Decom.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Decom</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

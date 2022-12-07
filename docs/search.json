@@ -72,9 +72,9 @@
   {
     "objectID": "Decom.html",
     "href": "Decom.html",
-    "title": "7  Decom",
+    "title": "8  Decom",
     "section": "",
-    "text": "Figure 7.1: The Decom module allows decomposition / matrix factorization of continuous variables\n\n\n\n\nThe decomposition module provide algorithms for linear and nonlinear decomposition / matrix factorization."
+    "text": "Figure 8.1: The Decom module allows decomposition / matrix factorization of continuous variables\n\n\n\n\nThe decomposition module provide algorithms for linear and nonlinear decomposition / matrix factorization.\nThe following algorithms are supported:\n\nPCA Principal Component Analysis\nICA Independent Component Analysis\nNMF Non-negative Matrix Factorization\nSPCA Sparse PCA\nKernel PCA Kernel Principal Component Analysis\nISOMAP ISOMAP\nMDS Multidimensional scaling\nLLE Locally Linear Embedding\ntSNE t-distributed Stochastic Neighbor Embedding\nUMAP Uniform Manifold Approximation and Projection"
   },
   {
     "objectID": "MRview.html",
@@ -103,5 +103,19 @@
     "title": "11  PDB",
     "section": "",
     "text": "Figure 11.1: The PDB module provides 3D visualization of protein structures\n\n\n\n\nThe PDB module allows visualization of protein structures featured in the Protein Data Bank (PDB)."
+  },
+  {
+    "objectID": "Cluster.html",
+    "href": "Cluster.html",
+    "title": "7  Cluster",
+    "section": "",
+    "text": "Figure 7.1: The Cluster module allows clustering of cases\n\n\n\n\nThe Cluster module allows clustering of cases. The following algorithms are included:\n\nKMEANS K-Means Clustering\nCMEANS Fuzzy C-Means Clustering\nPAM Patitioning Around Medoids (K-Medoids)\nPAMK Patitioning Around Medoids with k estimation\nSPEC Spectral Clustering\nNGAS Neural Gas Clustering\nMEANSHIFT Meanshift Clustering\nHOPACH Hierarchical Ordered Partitioning and Collapsing Hybrid\nEMC Expectation Maximization Clustering\nDBSCAN Density-Based Spatial Clustering of Applications with Noise\nHARDCL Hard Competitive Learning"
+  },
+  {
+    "objectID": "Predict.html",
+    "href": "Predict.html",
+    "title": "10  Predictive Modeling",
+    "section": "",
+    "text": "Figure 10.1: The Predict module makes advanced machine learning available in a few clicks\n\n\n\n\nThe Predict module allows training of regression and classification models using:\n\nGLMNET Elastic Net Regularization\nSVM Support Vector Machine\nCART Classification and Regression Trees\nRF Random Forest\nGBM Gradient Boosting\nXGBoost (a gradient boosting implementation)"
   }
 ]

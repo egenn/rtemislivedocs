@@ -11,3 +11,16 @@ knitr::include_graphics("6_rtemislive_0.93.75_Decomposition.jpeg")
 
 The decomposition module provide algorithms for linear and nonlinear decomposition /
 matrix factorization.
+
+The following algorithms are supported:
+
+- PCA Principal Component Analysis
+- ICA Independent Component Analysis
+- NMF Non-negative Matrix Factorization
+- SPCA Sparse PCA
+- Kernel PCA Kernel Principal Component Analysis
+- ISOMAP ISOMAP
+- MDS Multidimensional scaling
+- LLE Locally Linear Embedding
+- tSNE t-distributed Stochastic Neighbor Embedding
+- UMAP Uniform Manifold Approximation and Projection

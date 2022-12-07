@@ -23,8 +23,10 @@ book:
    - Plot.qmd
    - Heat.qmd
    - Graph.qmd
+   - Cluster.qmd
    - Decom.qmd
    - massGLM.qmd
+   - Predict.qmd
    - MRview.qmd
    - Protein.qmd
    - PDB.qmd
