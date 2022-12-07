@@ -24,3 +24,6 @@ The following algorithms are supported:
 - **LLE** [Locally Linear Embedding](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction#Locally-linear_embedding)
 - **tSNE** [t-distributed Stochastic Neighbor Embedding](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding)
 - **UMAP** [Uniform Manifold Approximation and Projection](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction#Uniform_manifold_approximation_and_projection)
+
+Algorithm-specific hyperparameters will be show below the algorithm selection box when
+applicable.

@@ -81,7 +81,7 @@
     "href": "Decom.html",
     "title": "9  Decom",
     "section": "",
-    "text": "Figure 9.1: The Decom module allows decomposition / matrix factorization of continuous variables\n\n\n\n\nThe decomposition module provide algorithms for linear and nonlinear decomposition / matrix factorization.\nThe following algorithms are supported:\n\nPCA Principal Component Analysis\nICA Independent Component Analysis\nNMF Non-negative Matrix Factorization\nSPCA Sparse PCA\nKernel PCA Kernel Principal Component Analysis\nISOMAP\nMDS Multidimensional scaling\nLLE Locally Linear Embedding\ntSNE t-distributed Stochastic Neighbor Embedding\nUMAP Uniform Manifold Approximation and Projection"
+    "text": "Figure 9.1: The Decom module allows decomposition / matrix factorization of continuous variables\n\n\n\n\nThe decomposition module provide algorithms for linear and nonlinear decomposition / matrix factorization.\nThe following algorithms are supported:\n\nPCA Principal Component Analysis\nICA Independent Component Analysis\nNMF Non-negative Matrix Factorization\nSPCA Sparse PCA\nKernel PCA Kernel Principal Component Analysis\nISOMAP\nMDS Multidimensional scaling\nLLE Locally Linear Embedding\ntSNE t-distributed Stochastic Neighbor Embedding\nUMAP Uniform Manifold Approximation and Projection\n\nAlgorithm-specific hyperparameters will be show below the algorithm selection box when applicable."
   },
   {
     "objectID": "massGLM.html",
