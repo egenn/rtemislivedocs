@@ -18,6 +18,7 @@ provides a summary output grouped by type:
     - Median
     - Mean
     - SD
+    - Pct missing
 - **Categorical**: includes all factors and character variables
     - N unique
     - Mode

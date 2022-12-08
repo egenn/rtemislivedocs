@@ -46,7 +46,7 @@
     "href": "Describe.html",
     "title": "4  Describe",
     "section": "",
-    "text": "Figure 4.1: The Cluster module allows clustering of cases\n\n\n\n\nThe Describe module allows you to select any number of variables of any class and provides a summary output grouped by type:\n\nNumeric: includes all numeric variables (incl. integer)\n\nMin\nMax\nMedian\nMean\nSD\n\nCategorical: includes all factors and character variables\n\nN unique\nMode\nCounts\nPct missing\n\nDate: includes all date variables\n\nMin\nMax\nMedian\nMean\nPct missing"
+    "text": "Figure 4.1: The Cluster module allows clustering of cases\n\n\n\n\nThe Describe module allows you to select any number of variables of any class and provides a summary output grouped by type:\n\nNumeric: includes all numeric variables (incl. integer)\n\nMin\nMax\nMedian\nMean\nSD\nPct missing\n\nCategorical: includes all factors and character variables\n\nN unique\nMode\nCounts\nPct missing\n\nDate: includes all date variables\n\nMin\nMax\nMedian\nMean\nPct missing"
   },
   {
     "objectID": "Plot.html#exporting-plots",
