@@ -31,6 +31,7 @@ book:
    - MRview.qmd
    - Protein.qmd
    - PDB.qmd
+  page-footer: "&copy; 2022 E.D. Gennatas"
 
 bibliography: references.bib
 
