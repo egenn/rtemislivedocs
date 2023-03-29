@@ -5,7 +5,7 @@ project:
 book:
   title: "rtemislive"
   author: "E.D. Gennatas"
-  date: "12/07/2022"
+  date: "03/29/2023"
   favicon: favicon.ico
   # google-analytics: "UA-127457544-1"
   sidebar:
@@ -31,7 +31,7 @@ book:
    - MRview.qmd
    - Protein.qmd
    - PDB.qmd
-  page-footer: "&copy; 2022 E.D. Gennatas"
+  page-footer: "&copy; 2023 E.D. Gennatas"
 
 bibliography: references.bib
 
