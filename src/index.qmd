@@ -17,7 +17,7 @@ old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 
 Welcome to the __rtemislive__ online documentation.
 
-<img class="rtimg" src="https://www.lambdamd.org/assets/rtemislive_0.93.4/rtemislive.jpeg" alt="rtemislive" style="width:100%;"/>
+<img class="rtimg" src="https://www.lambdamd.org/assets/rtemislive.jpeg" alt="rtemislive" style="width:100%;"/>
 <br>
 
 __rtemislive__ is the graphical interface for 
@@ -37,12 +37,7 @@ Classification
 <br>
 <figure>
     <img class="rtimg" src="https://www.lambdamd.org/assets/rtemislive_0.93.4/6_rtemislive_0.93.4_Decom.jpeg" alt="rtemislive Decomposition" style="width:100%;"/>
-    <!-- <figcaption>Examples of rtemis visualizations</figcaption> -->
-</figure>
-<br>
-<figure>
-    <img class="rtimg" src="https://www.lambdamd.org/assets/rtemislive_0.93.4/7_rtemislive_0.93.4_Cluster.jpeg" alt="rtemislive Clustering" style="width:100%;"/>
-    <!-- <figcaption>rtemislive</figcaption> -->
+    <figcaption>Example rtemislive visualization</figcaption>
 </figure>
 <br>
 
