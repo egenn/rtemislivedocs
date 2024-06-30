@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: ../docs
+  output-dir: ~/Web/rtemis.org/docs/rtemislive
 
 book:
   title: "rtemislive"
